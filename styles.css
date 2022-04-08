@@ -24,6 +24,12 @@ body {
   text-align: center;
 }
 
+.accent-title {
+  font-family: var(--title-font);
+  line-height: 1.3;
+  font-size: 2rem;
+}
+
 /* Hero Section Starts*/
 .hero {
   text-align: center;
@@ -44,7 +50,7 @@ body {
 }
 
 .craftmanship-container img {
-  height: 100%;
+  vertical-align: top;
 }
 
 .craftmanship-description {
@@ -52,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   position: relative;
   right: 1.2rem;
@@ -67,20 +73,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   position: relative;
   left: 1.5rem;
 }
 
-.accent-title {
-  font-family: var(--title-font);
-  line-height: 1.3;
-}
-
 /* Quality Never Faces Section Starts */
 .quality-never-fades {
-  background: url(images/325px/210803-thirtyyearsyoung-texturebanner-mob.jpg) center no-repeat;
+  background: url(images/325px/210803-thirtyyearsyoung-texturebanner-mob.jpg) no-repeat;
   background-size: cover;
   min-height: 45vh;
   display: flex;
@@ -90,8 +91,89 @@ body {
   margin-top: 5rem;
 }
 
+.quality-description {
+  line-height: 1.4;
+}
+
 .quality-headline {
   font-family: var(--title-font);
   font-size: 3rem;
   padding-bottom: 2rem;
+}
+
+/* Coming up Section Starts */
+.coming-up {
+  margin-top: 5rem;
+}
+
+.coming-up-description {
+  font-size: 1.9rem;
+  padding: 0 2rem;
+}
+
+.coming-up-description .accent-title {
+  font-size: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+.cards-container {
+  padding: 0 3rem;
+  margin: 3rem auto;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.cards-container img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.card-headline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.card-sub-headline {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.card-description {
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+}
+
+.card-btn {
+  font-size: 1.5rem;
+  color: var(--secondary-font-color);
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Founder Quote Section Starts */
+.founder-quote {
+  font-size: 1.8rem;
+  padding: 0 5rem;
+  margin-bottom: 6rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.end-quote {
+  margin-top: 2rem;
+}
+
+.founder-quote img {
+  margin-bottom: 3rem;
 }

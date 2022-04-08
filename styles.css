@@ -30,6 +30,11 @@ body {
   font-size: 2rem;
 }
 
+.img-976,
+.img-1920 {
+  display: none;
+}
+
 /* Hero Section Starts*/
 .hero {
   text-align: center;
@@ -77,6 +82,11 @@ body {
   line-height: 1.5;
   position: relative;
   left: 1.5rem;
+  width: 100%;
+}
+
+.hero-btn {
+  display: none;
 }
 
 /* Quality Never Faces Section Starts */
@@ -154,10 +164,9 @@ body {
 
 .card-btn {
   font-size: 1.5rem;
-  color: var(--secondary-font-color);
-  position: relative;
   text-transform: uppercase;
   font-weight: bold;
+  color: black;
 }
 
 /* Founder Quote Section Starts */
@@ -175,4 +184,51 @@ body {
 
 .founder-quote img {
   margin-bottom: 3rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 976px) {
+
+  /* Hero 976px */
+  .headline-title {
+    font-size: 5rem;
+  }
+
+  .img-325 {
+    display: none;
+  }
+
+  .img-976 {
+    display: block;
+  }
+
+  .accent-title {
+    font-size: 3rem;
+  }
+
+  .craftmanship-description {
+    font-size: 1.9rem;
+    line-height: 2;
+    right: 4rem;
+  }
+
+  .comfort-description {
+    font-size: 1.9rem;
+    line-height: 2;
+    left: 4rem;
+  }
+
+  .hero-btn {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+
+  .comfort-container {
+    position: relative;
+    bottom: 10rem;
+  }
 }

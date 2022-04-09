@@ -93,7 +93,7 @@ body {
 .quality-never-fades {
   background: url(images/325px/210803-thirtyyearsyoung-texturebanner-mob.jpg) no-repeat;
   background-size: cover;
-  min-height: 45vh;
+  min-height: 35rem;
   display: flex;
   align-items: center;
   color: #fff;
@@ -141,6 +141,10 @@ body {
 .card-content {
   background-color: #fff;
   padding: 2rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-headline {
@@ -152,8 +156,8 @@ body {
 
 .card-sub-headline {
   font-family: var(--title-font);
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 3.8rem;
+  margin-bottom: 2.5rem;
   line-height: 1;
 }
 
@@ -163,10 +167,11 @@ body {
 }
 
 .card-btn {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: bold;
   color: black;
+  margin-bottom: 2rem;
 }
 
 /* Founder Quote Section Starts */
@@ -230,5 +235,48 @@ body {
   .comfort-container {
     position: relative;
     bottom: 10rem;
+  }
+
+  /* Quality Never Fades 976px */
+  .quality-never-fades {
+    background: url("images/976px/210803-texturebanner-tablet.jpg") no-repeat;
+    background-size: cover;
+    min-height: 23rem;
+    margin-top: 0;
+  }
+
+  .quality-never-fades p {
+    padding: 1rem 20rem;
+  }
+
+  /* Coming Up Section 976px */
+  .coming-up {
+    margin-top: 5rem;
+  }
+
+  .coming-up-description .accent-title {
+    font-size: 5rem;
+    font-weight: normal;
+    padding-bottom: 0;
+  }
+
+  .cards-container {
+    margin-top: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  .card-content {
+    justify-content: center;
+    height: 35rem;
+  }
+
+  .card-sub-headline {
+    font-size: 4rem;
+  }
+
+  .card-description {
+    font-size: 2rem;
   }
 }

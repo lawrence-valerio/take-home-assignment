@@ -94,8 +94,6 @@ body {
   background: url(images/325px/210803-thirtyyearsyoung-texturebanner-mob.jpg) no-repeat;
   background-size: cover;
   min-height: 35rem;
-  display: flex;
-  align-items: center;
   color: #fff;
   font-size: 1.8rem;
   margin-top: 5rem;
@@ -103,12 +101,16 @@ body {
 
 .quality-description {
   line-height: 1.4;
+  padding: 5rem 0;
+  min-height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .quality-headline {
   font-family: var(--title-font);
   font-size: 3rem;
-  padding-bottom: 2rem;
 }
 
 /* Coming up Area Starts */
@@ -234,15 +236,19 @@ body {
 
   .comfort-container {
     position: relative;
-    bottom: 10rem;
+    bottom: 15rem;
   }
 
   /* Quality Never Fades Area 976px */
   .quality-never-fades {
     background: url("images/976px/210803-texturebanner-tablet.jpg") no-repeat;
     background-size: cover;
-    min-height: 23rem;
+    min-height: 15rem;
     margin-top: 0;
+  }
+
+  .quality-description {
+    min-height: 15rem;
   }
 
   .quality-never-fades p {
@@ -272,6 +278,10 @@ body {
     height: 35rem;
   }
 
+  .card-headline {
+    font-size: 2.5rem;
+  }
+
   .card-sub-headline {
     font-size: 4rem;
   }
@@ -291,5 +301,118 @@ body {
 
   .founder-quote img {
     margin: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .img-976 {
+    display: none;
+  }
+
+  .img-1920 {
+    display: block;
+  }
+
+  /* Hero Area 1920px */
+
+  .hero {
+    overflow: auto;
+  }
+
+  .headline-title {
+    padding: 3%;
+    font-size: 7rem;
+  }
+
+  .hero-btn {
+    margin-top: 5rem;
+    font-size: 1.9rem;
+  }
+
+  .accent-title {
+    font-size: 5rem;
+  }
+
+  .craftmanship-description {
+    font-size: 2.8rem;
+    right: 8rem;
+  }
+
+  .comfort-container {
+    bottom: 35rem;
+  }
+
+  .comfort-description {
+    font-size: 2.8rem;
+    left: 6.5rem;
+  }
+
+  /* Quality Never Fades Area 1920px */
+  .quality-never-fades {
+    background: url("images/1920px/210803-thirtyyearsyoung-texturebanner.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .quality-description {
+    min-height: 40rem;
+    font-size: 2.5rem;
+    padding: 5rem 19%;
+    line-height: 1.5;
+  }
+
+  .quality-headline {
+    font-size: 5rem;
+  }
+
+  /* Coming Up Area 1920px */
+  .coming-up {
+    margin-top: 8rem;
+  }
+
+  .coming-up-description .accent-title {
+    font-size: 8rem;
+  }
+
+  .coming-up-description p {
+    font-size: 3rem;
+  }
+
+  .cards-container {
+    margin-top: 8rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20rem;
+    padding: 0 20rem;
+  }
+
+  .card-description {
+    font-size: 2.5rem;
+  }
+
+  .card-content {
+    justify-content: space-around;
+    padding: 3rem 10%;
+    height: 37rem;
+  }
+
+  .card-headline {
+    font-size: 2rem;
+  }
+
+  .card-sub-headline {
+    font-size: 6rem;
+  }
+
+  .card-btn {
+    font-size: 1.5rem;
+  }
+
+  /* Founder Quote Area 1920px */
+  .founder-quote {
+    font-size: 3rem;
+    padding: 0 17%;
+  }
+
+  .quote {
+    margin-left: 7rem;
   }
 }
